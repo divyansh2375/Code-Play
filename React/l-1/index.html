@@ -6,8 +6,35 @@
     <title>Namaste React</title>
 </head>
 <body>
+    <!-- 1 -->
+    <!-- simple html se heading kese dala bo he -->
+    <!-- <h1>Namaste React</h1> -->
+    
+    <!-- 2 -->
+    <div id="root"></div>
+    
+    
+    
+<!-- <script>
+    // javascirpt ke andar kese heding dala wo he 
+    // const heading = document.createElement("h1")  //pagal ye comma ke andar se matlb hota he ye naam dene ke liye hi nhi he sirf iska use hota he agar h1 dala to heading 1 and agar sirf heading dala to different cheez hoga mtlb tum khud dekh skte ho isme tumhara size change ho jayega dekho try krke ek baar khud pata chal jayega . brackeer wala known as nodename (bache ka naam). NOde- it refers to current node as a string . it is called as instance property
+
+//     heading.innerText = "namaste react from javascript"
+//     const root = document.getElementById("root")
+//     root.appendChild(heading)
+// </script> -->
     
 
-    
+
 </body>
+<!-- first react program  -->
+
+<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+<script>
+    const heading = React.createElement("h1",{},"namaste everyone")
+    const root = ReactDOM.createRoot(document.getElementById("root"))
+    root.render(heading) // render means modyfying
+</script>
 </html>
