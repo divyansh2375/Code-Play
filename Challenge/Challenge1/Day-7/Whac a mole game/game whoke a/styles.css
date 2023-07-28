@@ -1,0 +1,23 @@
+.grid{
+    width: 619px;
+    height: 606px;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 50%; */
+    /* justify-content: center; */
+    /* justify-items: center; */
+    /* justify-self: center; */
+}
+.square{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+   
+
+
+}
+.mole{
+    background-image: url(https://en.pimg.jp/091/889/464/1/91889464.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
