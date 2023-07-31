@@ -109,3 +109,130 @@ neog camp
 // }
 // console.log(string);
 
+// ex-10
+// var grocceryItems = ["apple", "mango", "pineapple","juice","pea"]
+// var total = grocceryItems.length;
+// console.log(grocceryItems[0])
+// console.log(grocceryItems[2])
+// console.log(grocceryItems[total-1])
+
+
+
+// ex-11
+// var grocceryItems = ["apple", "mango", "pineapple","juice","pea"]
+// for(let i = 0 ; i<grocceryItems.length ; i++){
+//   console.log("Item-no"+ (i+1 )+"  " +grocceryItems[i])
+// }
+
+//new way to write array in js
+// var gro = new Array("apple", "mango " , "tas");
+// // a = gro[0]
+// console.log(gro[0]);
+
+//ex-12 
+// var superman = {
+//   name: "Batman",
+//   height : "12cm ",
+//   age : "34",
+//   favouriteColor: "Black"
+
+// }
+// console.log(superman.name);
+
+//ex-12
+
+
+//myattempt
+// var readlineSync = require("readline-sync")
+// var qno = readlineSync.question("enter the question no")
+//   var question1 = {
+//     ques: "what is your name",
+//     ans: "divyansh",
+
+    
+
+  
+//   }
+// var question2 = {
+//   ques: "what is your father",
+//     ans: "father",
+  
+// }
+// var question3 = {
+//     ques : "what is your school address",
+//     ans: "dehradoon"
+  
+// }
+
+// function playGame(){
+//   if(qno ==1){
+//     console.log(question1.ques)
+//     console.log(question1.ans)
+//   }else if (qno == 2){
+//     console.log(question2.ques)
+//     console.log(question2.ans)
+    
+//   }else if (qno == 3){
+//     console.log(question3.ques)
+//     console.log(question3.ans)
+    
+//   }
+  
+// }
+
+// playGame()
+
+//sir wala dekhke 
+//sab kuch jo upar use kiye the 
+var readlineSync = require("readline-sync")
+var score = 0;
+
+var list = [{
+  ques : "what is color of lotus  ",
+  ans : "pink"
+},
+            {
+              ques : "what is color of sky  ",
+              ans : "blue"
+            },
+            {
+              ques : "what is color of lion  ",
+              ans : "yellow"
+            },
+            {
+              ques : "what is the antonym of cat  ",
+              ans : "dog"
+            },
+            {
+              ques : "who is the author of Hanuman Chalisa  ",
+              ans : "tulsidas"
+            },
+            {
+              ques : "where is tajmahal  ",
+              ans : "agra"
+            }
+           ]
+
+function play(question,answer){
+       var user = readlineSync.question(question)
+  if (user == answer){
+    console.log("You are right")
+    score += 1;
+    console.log("Your Score Is " + score);
+  }else{
+    console.log("wrong answer")
+  }
+}
+//not looking good 
+// play("What is color of lion " , "yellow")
+// play("What is color of sky " , "blue")
+
+for(let i = 0 ; i<list.length ; i++){
+  var currentq = list[i];
+  play(currentq.ques,currentq.ans)
+}
+console.log("You Well Played The Game And Your Final SCORE is :" +score);
+
+//sharing with friends direct output
+//?embed=1&output=1
+
