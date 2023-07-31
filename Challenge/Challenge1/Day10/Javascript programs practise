@@ -1,0 +1,108 @@
+// question -1
+
+// var question = prompt("what is the color of lion")
+// var answer = prompt("Enter your answer")
+// if (answer === "yellow"){
+//   console.log("Your answer is correct")
+// }else{
+//   console.log("Your answer is not corerect")
+// }
+// -----------------------
+// var Ans = "white";
+// function quesAns(question){
+//   var quest = alert(question);
+//   var answer = prompt("Enter your answer ")
+//   if (answer === Ans){
+//     console.log("Your answer is correct")
+//   }else {
+//     console.log('your answer is not correct')
+//   }
+// }
+// quesAns("what is the color of cat");
+
+// -------------------------
+// var readlineSync = require("readline-sync");
+// var question = readlineSync.question("Enter Teacher question");
+// var answer = readlineSync.question("Put it that Answer" , {
+//   hideEchoBack : true
+// });
+
+
+// function user(){
+//   var showQuestion = "User Your Question is " + question;
+//   var userAnswer = readlineSync.question("Enter Your Own answer")
+//   if (userAnswer == answer){
+//     console.log("Your answer is correct");
+//   }else{
+//     console.log("Your answer is not correct");
+//   }
+// }
+// user();
+
+// question-2
+
+// var readlineSync = require("readline-sync")
+// var name = readlineSync.question("enter your name ")
+// for(var i=1 ; i<6 ; i++){
+//   console.log(name)
+// }
+
+//question -3
+
+// var readlineSync = require("readline-sync")
+// var num = readlineSync.question("Enter num")
+// for(let i = 0 ; i<=num ; i++){
+//   for(let j = 0 ; j <= num ; i++)
+//     console.log("*")
+// }
+
+
+//from website using 
+// let n = 5; // height of pattern
+// let string = "";
+// // External loop
+// for (let i = 1; i <= n; i++) {
+//   // Internal loop
+//   for (let j = 1; j <= i; j++) {
+//     string += "*";
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+//self
+// var readlineSync = require("readline-sync");
+// var num = readlineSync.question("enter the number You want to print ")
+// string = "";
+// for(let i = 1 ; i <= num ; i++){
+//   for(let j=1 ; j<=i ; j++){
+//     string+= "*"
+//   }
+//   string += "\n"
+// }
+// console.log(string);
+
+
+// var readlineSync = require("readline-sync");
+// var num = readlineSync.question("enter the number You want to print ")
+// string = "";
+// for(let i = num ; i>= 1 ; i-- ){
+//   for(let j = i ; j>= 1 ; j--){
+//     string += "*"
+//   }
+//   string += "\n"
+// }
+// console.log(string)
+
+//next pattern 
+//  var readlineSync = require("readline-sync")
+// string = ""
+// var num = readlineSync.question("num")
+// for(let i=1 ; i<=num ; i++){
+//   for(let j=1 ; j<=num ; j++){
+//     string += "*"
+//   }
+//   string+="\n"
+// }
+// console.log(string);
+
