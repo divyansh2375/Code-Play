@@ -1,1 +1,15 @@
+Async function - (chai Aur code)
+we kow js is syncronous ek code ke baad ek code execute and single threaded languauge he .to slow he kya ? yes but ye feel nhi hone deti
+global execution context
+//blocking code and unblocking code ko hi async kehte he
+do tarah se code likhe jate hein asyn and sync 
+blocking = me block kr dega program ko for example - aap yhan wait kariye me tab tak aapko pani leke ata hu .
+unblocking = aap yhan apna phone chalte rhiye jo aap kr rhe he me tab tak aapke liye pani leke aata hu 
+kisi ko file read krna he to bhot problem hoti he operating system cant read file .first we need to give access to kernel then kernel do something then give response to user tab tak kuch nahi kr skte 
+so agar aapne file ko sync read kiya to bo block kr dega aur jab tak kernal response nahi krega tab tak whi rehga 
+whi agar aapne file ko async read kiya to aapka other program to chalta hi rhega aur jitna iska time lagega wo krke de dega fir me aapko notify kr dunga ki read kr diya
+to sir fir nonblocking yaani async acha he - NO nO NO 
+kyoki wo register succes de dega par agar kuch file me changes he usko correct krke nhi de payega
+ to kai bar blocking yani sync acha he to kahi unblocking yani async acha he
 
+baad me mujhe ye yaad dila dena -- wo kaam web api ka kaam hota he  web api browser me hoti he ex-settiemout
