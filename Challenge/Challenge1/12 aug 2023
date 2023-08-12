@@ -1,0 +1,40 @@
+creating the basic http server with node and also with express
+
+
+// const http = require('http');
+// const PORT = 3000;
+
+
+// const server = http.createServer(function exec(request ,response ){
+//     console.log(request.method);
+//     if (request.url == '/home'){
+//         response.end("welcome to home");
+//     }else if (request.url == '/faq'){
+//         response.end("list of faqs");
+//     }else{
+
+//         response.end("Hello world");
+
+//     }
+    
+// })
+
+// server.listen(PORT , function process(){
+//     console.log("server started at port at 3000")
+// })
+const express = require("express");
+const app = express();
+app.get("/", function row(req,res) {
+    res.send("Hello world")
+})
+app.get("/home", function row(req,res) {
+    res.send("Hello world home")
+})
+app.get("/faq", function row(req,res) {
+    res.send("Hello world faq")
+})
+
+
+app.listen(3000,() => {
+    console.log("running on 3000")
+})
