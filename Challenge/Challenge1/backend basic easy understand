@@ -1,0 +1,31 @@
+1st simple code on repl it -
+const express = require('express');
+
+const app = express();
+
+
+const productCallback = (req,res) =>{
+res.send("product will listed here")  
+}
+  
+
+
+app.get('/', (req, res) => {
+  res.send('Hello Express app!')
+});
+
+app.get('/products', (req, res) => {
+  res.send('Hello products listed here')
+});
+
+app.get('/products',  productCallback);
+
+app.listen(3000, () => {
+  console.log('server started');
+});
+
+
+
+
+2nd more advanced than before ;
+
