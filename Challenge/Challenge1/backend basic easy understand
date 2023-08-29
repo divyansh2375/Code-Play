@@ -28,4 +28,47 @@ app.listen(3000, () => {
 
 
 2nd more advanced than before ;
+const express = require('express');
+
+const app = express();
+
+const database = {
+ products: [
+  {
+    name: "ball",
+    price : 25
+  },
+    
+  {
+    name: "pen",
+    price : 10
+  },
+    
+  {
+    name: "lunchbox",
+    price : 25
+  }
+    
+  ]
+};
+
+const productCallback = (req,res) =>{
+  const productPage = database.products.map((product) => 
+ ` <li>${product.name}</li> `).join(`\n`)
+res.send(productPage)  
+}
+  
+
+
+app.get('/', (req, res) => {
+  res.send('Hello Express app!')
+});
+
+
+
+app.get('/products',  productCallback);
+
+app.listen(3000, () => {
+  console.log('server started');
+});
 
